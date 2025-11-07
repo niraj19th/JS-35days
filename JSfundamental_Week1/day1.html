@@ -1,0 +1,62 @@
+  
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>My Practice</title>
+</head>
+<body>
+    <h1>Check Console (F12)</h1>
+    
+    <script>
+   <!-- variable -->
+   
+   let age = 22; 
+// <!--  this is variable, JS creates a space in memory like a box for the variable, 
+//  now whoever mention age it will be said 22 by the js// -->
+
+ 
+//  Let vs Constant 
+
+//   Let - The box can hold the different things
+
+ let score = 0;
+ console.log(score); // here score is stored as 0
+
+  score = 10;
+  console.log(score) // now score is 10 
+
+  score = 20;
+  console.log(score) // again changed, the score now becomes 20
+
+  // meaning we can change the value of variable, if we have created variable with a specific value, we can replace it with different value
+
+
+  // Constant - the box is locked, once it is created we cant reassign the value even after assigning the next value
+
+  const birthYear = 2005;
+console.log(birthYear);
+
+birthYear = 2009;
+console.log // this is wrong, since we already created constant we cannot rewrite or assign new value on it// error , cannot change
+
+//JS say !! no this box is locked..
+
+// When to use Const then???==================================================
+// tips- use const by default - 90%percent of the time
+
+const pi = 3.14159; // never changes
+const username = "Niraj"; // stays same
+const MaxPlayer = 10; // fixed value
+
+
+// Use Let only when the value will be changed
+let score = 3;  // will increase during the game
+let CurrentPage = 1; // will change when user clicks
+let isLoggedIn = true ; // changes to false when logged out
+let activeStatus = false // changes to true when user is active
+
+  
+        
+    </script>
+</body>
+</html>
