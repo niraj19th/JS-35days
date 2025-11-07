@@ -1,0 +1,108 @@
+<!--  Data types understanding deeply -->
+
+<!--  1. Strings - text data -->
+
+
+<!--  There are three ways to create strings -->
+
+let name1 = "niraj"; // double quotes
+let name2 = 'niraj'; // single quotes
+let name3 = `John`;  // backsticks(template literals)
+
+<!--  they are same but backticks are special -->
+  let Firstname = "Niraj";
+  let Lastname = "Kadel";
+
+  <!--  old way (concatenation) -->
+
+  let FullName = "Firstname" + " " + "Lastname";  // Niraj Kadel
+    
+  <!--  New way, backticks or template literals is better -->
+    let FullName = `${Firstname} ${Lastname}`; // Niraj Kadel
+
+
+
+    <!-- Template literals helps to inject the variables -->
+
+    let income = 30000;
+    let message = `My monthly income is ${income}`;
+
+    let NextYear = `my next month income will be ${income + 7000}`;
+
+
+    <!--  Numbers- all numbers are the same type -->
+
+    let whole = 42;    // This is integer
+    let decimal = 3.14; // this is float
+    let negative = -33; // this is negative number
+
+    console.log(typeof whole); // type is number
+    console.log(typeof decimal); // type is number
+    console.log(type of negative); // type is number
+
+
+    <!--  Math with numbers -->
+      
+    let x = 2;
+    let y = 4;
+    
+    console.log(x + y); // addition, the ans will be 6
+    console.log( x - y); // substraction, the ans will be -2
+    console.log(x * y); // multiplicatin, the ans will be 8
+    console.log( x / y); // division, the ans will be 0.5
+    console.log ( x % y); // modulo/reminder, the ans will be 2
+
+
+    <!--  understanding modulo -->
+
+    let num=2;
+    if ( num %2 == 0){
+        console.log("even"); // prints this
+    }
+    else {console.log("odd");
+}
+
+
+
+
+<!--  Boolean - true or false only  -->
+
+let isRaining = true;
+let hasWings = false ;
+
+<!--  used in decision -->
+
+if(isRaining){
+    console.log("take umbrella");
+
+}
+
+if(!hasWings){ // ! means not
+    console.log("cannot fly");
+}
+
+
+<!-- Comaprisons give you boolean -->
+
+let age = 20;
+let canvote = age >=18 ; // true age is greater than 18, so he can vote
+
+let price = 100;
+let ischeap = price < 50 ; // false because price i.e 100 is greater than 50
+
+
+<!-- null vs undefined -->
+
+ <!-- undefined-  JS says " I dont know what is this yet"-->
+  let x;
+  console.log(x); // undefined
+
+<!-- null - You say this is intentionally empty -->
+ let emptyBox = null;
+ console.log(emptyBox); // null
+
+
+ <!--  Real example -->
+   let currentUser = null; // no user loggined in yet
+
+   let user = "Niraj"; // now there is a user
