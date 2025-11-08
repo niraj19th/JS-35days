@@ -1,0 +1,86 @@
+<!-- Operators - doing things with data -->
+
+let a = 4;
+let b = 2;
+
+console.log (a + b); // 6
+console.log (a - b); // 2
+console.log ( a * b);// 8
+console.log(a / b); // 2
+console/log(a % b); // 0
+
+
+let x = 10;
+let y = 15;
+
+<!-- basic math -->
+
+x++;  // x is 11 because _ x = x + 1;
+x--; // x is 9   _ x = x - 2;
+x +=5; // x is 15  _ x = x + 5
+x -=3;  //  x is 7  _x = x - 3
+x *=2;  //  x is 20 _ x = x * 2
+
+
+
+<!-- Comparsion operators -->
+
+// Always use === and !== (strict equality)
+
+console.log (5 === 5);  // true_ same value  AND types
+console.log (0 === "5"); // false _ different datatypes!
+console.log (5 !== 10);   // true _ they are not equal 
+
+
+
+<!-- why === is better than ==  -->
+
+ // == does Type Coerction( automatic conversion)  ---- DANGEROUS
+
+ console.log (5 == "5") // true_ ( js converts "5" to 5 )
+console.log (0 == false ); // true _ 0 and false are equal
+console.log("" == false) // true _ empty string and false
+
+
+// === checks value and type  - SAFE !  
+
+
+console.log(5 === "5");   // false ( types is diff i.e num vs string)
+console.log(0 === false);  // false ( number vs boolean)
+console,log("" === false);  // false ( strings vs boolean)
+
+
+
+<!--  Logical operators -->
+
+
+// AND (&&) - Both side must be true
+ 
+let age = 25;
+let hasLicense = true; 
+
+if (age >= 18  && hasLicense) {
+    console.log("Can Drive"); //  Both are true so this runs
+}
+
+
+// OR (||) At least one side must be true
+
+
+ let isWeekend = true;
+ let isHoliday = false;
+
+ if ( is weekend ||  is Holiday ){
+    console.log ("Day off")  // one is true, so this runs
+ }
+
+
+ // NOT ! - Flips true or false
+
+
+ let isRaining = false; {
+
+    id (!isRaining){
+        console.log("Go outside"); // false!= so this runs 
+    }
+ }
