@@ -1,0 +1,69 @@
+<!-- IF/Else condition  -->
+
+<!-- the basic structure -->
+
+if (condition){
+    //code runs if the condition is true
+}
+
+else (condition){
+    // code runs if the condition is false
+}
+
+let age = 20;
+if ( age >= 18){
+    console.log("You are eligible to vote");
+}
+else{
+    console.log("You are not eligible to vote")
+}
+
+<!-- prints you are eligible to vote  -->
+
+
+
+<!--  multiple condition  (else if ): -->
+
+let score = 90;
+
+if ( score >= 90){
+    console.log("Grade A");
+}
+
+    else if ( score >= 80){
+        console.log("Grade B");
+    }
+
+    else if ( score >= 70){
+        console.log("Grade C");
+    }
+
+    else {
+        console.log("Grade D");
+    }                                   // Prints Grade A
+
+
+    <!-- Nested if statement  -->
+
+  // Define age and license status
+let age = 44;           // Your age
+let hasLicense = true;  // Do you have a driving license?
+
+// Check if person is 18 or older
+if (age >= 18) {  
+    // Inside this block, person is old enough to drive
+    
+    if (hasLicense) {  
+        // Check if person has a license
+        console.log("You can drive");  // ✅ This runs because age >=18 and hasLicense = true
+    } else {  
+        // Person is old enough but does NOT have a license
+        console.log("Get your license first");  
+    }
+
+} else {  
+    // Person is too young (age < 18)
+    console.log("You are too young to drive");  
+}
+
+
