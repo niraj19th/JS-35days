@@ -1,4 +1,58 @@
  <!-- Functions - The power of reusable code  -->
 
  What is Function really?
--->  A Function is a named block of code that does one specific job
+//  A Function is a named block of code that does one specific job //
+
+// without function - repeatative
+console.log("Hello Niraj");
+console.log("Hello Roshan");
+console.log("Hello Shiva");
+
+<!-- Withfunction - reusable -->
+
+function greet(name) {      // greet is function name   // name is parameter  // variable inside the function
+    console.log(" Hello," + name + "!");
+}
+greet("Niraj");      // niraj is arguement // a value sent to the function 
+greet("Roshan");  // prints out "Hello Roshan!"
+greet("Shiva");
+
+
+
+<!-- Anatomy of function -> this means the structure or parts that makes the function  -->
+
+
+function functionName(parameter1, parameter2){
+    // code that runs when the function is called
+    let result = parameter1 + parameter2
+    return result; // sends this value back
+}
+
+// call the function
+
+let answer = functionName(5, 3);     // ans = 8
+
+
+<!-- Breaking the function down -->
+
+function - keyword that says "I'm making a function"
+functionName - what you call it (like a variable name)
+parameters - inputs the function needs (like ingredients)
+body - the code that runs (what it does)
+return - the output it gives back (the result)
+
+ 
+<!-- Example of function  -->
+
+Add two number:
+
+function add(a,b){
+    let sum = a + b;
+    return sum;
+}
+
+<!-- using it -->
+
+let result = add( 5 + 5);
+let result2 = add(6 + 10);
+let result3 = add(6 + 10);
