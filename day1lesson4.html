@@ -56,3 +56,67 @@ function add(a,b){
 let result = add( 5 + 5);
 let result2 = add(6 + 10);
 let result3 = add(6 + 10);
+
+
+
+<!-- 
+Arrow Functions - Modern Syntax: -->
+
+<!-- Arrow functions are a modern, shorter way to write functions in JavaScript.
+They are called “arrow” because of the => symbol used in their syntax. -->
+
+
+<!-- Basic syntax -->
+
+function add(a + b){
+    return a + b;
+}
+console.log(add(5 + 3 ) ); // ans becomes 8
+
+
+arrow function
+
+const add = ( a, b) => {
+    return a + b;
+};
+console.log (add( 5 + 3));
+
+
+<!--  again // old way of making function  -->
+
+function add { a , b}{
+    return a + b ; 
+}
+
+<!--  new way // arrow function  -->
+  
+const add = ( a, b) =>  {
+    return a + b;
+}
+
+
+<!--  even shorter in one line  -->
+
+const add = ( a, b ) => a + b;
+
+
+<!--  they all do the same thing  -->
+
+
+<!--  when to use each -->
+
+//  regular functions =  when code is longer or complex
+// arrow functions =  when code is short/ simple
+
+
+<!--  function with multiple steps -->
+
+ function CalculateTax(price) {      // JS stores this function under the name CalculateTax, nothing runs yet - it is just saved and ready to use
+    let taxRate = 0.1;               //
+    let taxAmt = price * taxRate;
+    let totalPrice =  price + taxAmt;
+return totalPrice
+ }
+
+let finalPrice = CalculateTax(100);
+console.log(finalPrice);
