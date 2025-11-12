@@ -1,0 +1,60 @@
+<!-- doing some real things  -->
+<!--  challenge - 1 /// temperature classifier -->
+
+function classifyTemperature(temp){
+    if ( temp < 0){
+        return "Freezing";
+    }
+    else if (temp < 15){
+        return "cold";
+    }
+
+    else if (temp < 25){
+        return "moderate";
+    }
+
+    else if (temp < 35){
+        return "hot";
+    }
+    
+    else {
+        return "veryhot";
+    }
+
+}
+
+// test it 
+
+console.log (classifyTemperature(-5));   // freezing
+
+console.log(classifyTemperature(10)); // cold
+
+console.log(classifyTemperature(30)); // hot
+
+console.log(classifyTemperature(20));  // moderate
+
+
+
+
+
+<!--  -->challenge 2 - even or odd checker</35>
+
+
+function checkEvenOdd(num)
+if ( num % 2 === 0){
+    return "even";
+}
+else {
+    return "odd";
+}
+
+
+<!-- test it -->
+
+console.log (checkEvenOdd(2)); // "even"
+console.log (checkEvenOdd(9)); // "odd"
+console.log("checkEvenOdd(12)"); // "even"
+
+
+
+<!-- console.log -->
