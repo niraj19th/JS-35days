@@ -57,4 +57,35 @@ console.log("checkEvenOdd(12)"); // "even"
 
 
 
-<!-- console.log -->
+<!-- challenge 3-->
+
+
+function ageCategory(age){
+
+    if ( age > 0 || age > 150){
+        return "invalid age";
+        }
+
+else if ( age < 13){
+    return "child";
+}
+
+else if ( age < 18){
+return "Teenage";
+}
+
+else if ( age > 60){
+return "adult";
+}
+else {
+    return "senior";
+}
+
+}
+
+<!--  testing it out -->
+
+console.log (ageCategory)(12);   // "child"
+console.log (ageCategory(19));    // "Teenage"
+console.log (ageCategory(68));    // adult
+console.log (ageCategory(100));   // "Senior"
