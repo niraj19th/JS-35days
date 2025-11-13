@@ -1,0 +1,34 @@
+<!-- bmi calculator with categories -->
+
+function calculateBmi( height, weight){
+    <!-- step 1 - calculate bmi  -->
+let bmi = weight / (height * height);
+
+<!--  step 2 - round  to 2 decimal places-->
+  bmi =  Math.round(bmi * 100 ) / 100;
+
+  <!--  step 3 : determine the category  -->
+    let category;
+    let advice;
+    if ( bmi < 19.5){
+        category = "underweight";
+        advice = "eat more food";
+    }
+else if ( bmi < 25){
+    category = "Normalweight";
+    advice = "eat same food";
+}
+
+else if ( bmi < 30){
+    category = "obese"
+    advice = "eat less food";
+}
+
+<!-- return result -->
+
+return `bmi: ${bmi}, Category : ${category}. advice : ${advice}`;
+}
+
+console.log(calculateBmi(2.5, 15));    //underweight
+console.log(calculateBmi(6.5, 24));    // "Normalweight"
+console.log("calculate(2.5, 28)");    // "obese"
