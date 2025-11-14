@@ -15,3 +15,311 @@ function subTwonum ( num3, num4){
 }
 
 subTwonum( num3, num4);
+
+
+<!-- function to check odd or even -->
+
+function isEven(num) {
+    return num % 2 === 0 ? "Even" : "Odd";
+}
+console.log(isEven(5));
+
+
+<!--  fucnion to chekc the largest arrya -->
+function findLargest(a, b, c) {
+    return Math.max(a, b, c);
+}
+console.log(findLargest(10, 5, 8));
+
+
+<!-- . Function to reverse a string -->
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseString("Niraj"));
+
+
+<!-- 
+ 1. Debounce Function (Used in Search Boxes, Input Fields) -->
+function debounce(func, delay) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), delay);
+    };
+}
+
+// Example:
+const search = debounce(() => console.log("Searching..."), 500);
+// ===============================
+// ALL-IN-ONE JS FUNCTIONS PRACTICE SET
+// REAL-LIFE USEFUL + MOST USEFUL
+// ===============================
+
+// 1. Sum of two numbers
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+
+// 2. Check if a number is prime
+function isPrime(num) {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+// 3. Reverse a string
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+// 4. Capitalize first letter of each word
+function capitalizeWords(str) {
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
+// 5. Check if a string is a palindrome
+function isPalindrome(str) {
+    const cleaned = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    return cleaned === cleaned.split('').reverse().join('');
+}
+
+// 6. Generate random number between min and max
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// 7. Convert Celsius to Fahrenheit
+function celsiusToFahrenheit(c) {
+    return (c * 9/5) + 32;
+}
+
+// 8. Find factorial of a number (iterative)
+function factorial(n) {
+    if (n < 0) return undefined;
+    let fact = 1;
+    for (let i = 2; i <= n; i++) fact *= i;
+    return fact;
+}
+
+// 9. Remove duplicates from an array
+function removeDuplicates(arr) {
+    return [...new Set(arr)];
+}
+
+// 10. Check if an array contains a value
+function contains(arr, value) {
+    return arr.includes(value);
+}
+
+// 11. Merge two arrays and remove duplicates
+function mergeArrays(arr1, arr2) {
+    return [...new Set([...arr1, ...arr2])];
+}
+
+// 12. Convert array of numbers to array of strings
+function numbersToStrings(arr) {
+    return arr.map(String);
+}
+
+// 13. Calculate BMI
+function calculateBMI(weight, height) {
+    const bmi = weight / (height * height);
+    if (bmi < 18.5) return "Underweight";
+    else if (bmi < 25) return "Normal";
+    else if (bmi < 30) return "Overweight";
+    else return "Obese";
+}
+
+// 14. Count occurrences of a character in a string
+function countChar(str, char) {
+    return str.split(char).length - 1;
+}
+
+// 15. Flatten a nested array (one level)
+function flattenArray(arr) {
+    return arr.flat();
+}
+
+// 16. Find largest number in an array
+function maxInArray(arr) {
+    return Math.max(...arr);
+}
+
+// 17. Find smallest number in an array
+function minInArray(arr) {
+    return Math.min(...arr);
+}
+
+// 18. Shuffle an array (Fisher-Yates)
+function shuffleArray(arr) {
+    let a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+// 19. Convert string to title case
+function toTitleCase(str) {
+    return str.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+}
+
+// 20. Delay execution (returns a Promise)
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Example usage:
+console.log(addTwoNumbers(5, 10));
+console.log(isPrime(13));
+console.log(reverseString("Niraj"));
+console.log(capitalizeWords("hello world"));
+console.log(isPalindrome("Racecar"));
+console.log(randomNumber(1, 100));
+console.log(celsiusToFahrenheit(30));
+console.log(factorial(5));
+console.log(removeDuplicates([1,2,2,3,4,4]));
+console.log(contains([1,2,3], 2));
+console.log(mergeArrays([1,2], [2,3]));
+console.log(numbersToStrings([1,2,3]));
+console.log(calculateBMI(70, 1.75));
+console.log(countChar("javascript", "a"));
+console.log(flattenArray([1, [2, 3], 4]));
+console.log(maxInArray([10,5,20]));
+console.log(minInArray([10,5,20]));
+console.log(shuffleArray([1,2,3,4,5]));
+console.log(toTitleCase("hello world from js"));
+delay(1000).then(() => console.log("1 second later"));
+
+// ===============================
+// JS FUNCTIONS PRACTICE SET
+<!-- // FINANCE & ECONOMY INTERVIEW LEVE--------------  advance lvl for future use
+  -->
+// ===============================
+
+// ---------- 1. Simple Interest ----------
+function simpleInterest(principal, rate, time) {
+    return (principal * rate * time) / 100;
+}
+
+// ---------- 2. Compound Interest ----------
+function compoundInterest(principal, rate, time, n = 1) {
+    // n = times interest compounded per year (default 1)
+    return principal * Math.pow(1 + rate / (100 * n), n * time) - principal;
+}
+
+// ---------- 3. EMI Calculator ----------
+function calculateEMI(principal, rate, months) {
+    let monthlyRate = rate / (12 * 100);
+    return (principal * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -months));
+}
+
+// ---------- 4. Currency Converter ----------
+function currencyConverter(amount, rate) {
+    // rate = 1 USD = rate INR or other currency
+    return amount * rate;
+}
+
+// ---------- 5. Stock Profit/Loss ----------
+function stockProfitLoss(buyPrice, sellPrice, quantity) {
+    let difference = sellPrice - buyPrice;
+    return {
+        profitLoss: difference * quantity,
+        type: difference > 0 ? "Profit" : difference < 0 ? "Loss" : "No Profit/Loss"
+    };
+}
+
+// ---------- 6. Calculate CAGR ----------
+function CAGR(beginningValue, endingValue, years) {
+    return Math.pow(endingValue / beginningValue, 1 / years) - 1;
+}
+
+// ---------- 7. Moving Average ----------
+function movingAverage(arr, period) {
+    let result = [];
+    for (let i = 0; i <= arr.length - period; i++) {
+        let sum = 0;
+        for (let j = 0; j < period; j++) sum += arr[i + j];
+        result.push(sum / period);
+    }
+    return result;
+}
+
+// ---------- 8. Convert JSON transactions to CSV ----------
+function transactionsToCSV(transactions) {
+    if (transactions.length === 0) return "";
+    const headers = Object.keys(transactions[0]).join(",");
+    const rows = transactions.map(tx => Object.values(tx).join(","));
+    return [headers, ...rows].join("\n");
+}
+
+// ---------- 9. Summarize income/expense ----------
+function summarizeTransactions(transactions) {
+    let income = 0, expense = 0;
+    transactions.forEach(tx => {
+        if (tx.type === "income") income += tx.amount;
+        else if (tx.type === "expense") expense += tx.amount;
+    });
+    return { income, expense, balance: income - expense };
+}
+
+// ---------- 10. Top N transactions ----------
+function topTransactions(transactions, n = 5, type = "income") {
+    return transactions
+        .filter(tx => tx.type === type)
+        .sort((a, b) => b.amount - a.amount)
+        .slice(0, n);
+}
+
+// ---------- 11. Detect financial anomalies ----------
+function detectAnomalies(transactions, threshold) {
+    return transactions.filter(tx => Math.abs(tx.amount) > threshold);
+}
+
+// ---------- 12. Round to 2 decimal places ----------
+function round2(num) {
+    return Math.round(num * 100) / 100;
+}
+
+// ---------- 13. Percentage change ----------
+function percentageChange(oldValue, newValue) {
+    return ((newValue - oldValue) / oldValue) * 100;
+}
+
+// ---------- 14. CAGR-based future value ----------
+function futureValueCAGR(presentValue, cagr, years) {
+    return presentValue * Math.pow(1 + cagr, years);
+}
+
+// ---------- 15. Portfolio Value ----------
+function portfolioValue(assets) {
+    // assets = [{name, quantity, price}]
+    return assets.reduce((sum, a) => sum + a.quantity * a.price, 0);
+}
+
+// ---------- EXAMPLES ----------
+
+console.log("Simple Interest:", simpleInterest(1000, 5, 2));
+console.log("Compound Interest:", round2(compoundInterest(1000, 5, 2)));
+console.log("EMI:", round2(calculateEMI(50000, 7.5, 12)));
+console.log("Currency:", currencyConverter(100, 130));
+console.log("Stock P/L:", stockProfitLoss(100, 120, 10));
+console.log("CAGR:", round2(CAGR(1000, 1500, 3) * 100) + "%");
+console.log("Moving Avg:", movingAverage([100, 200, 300, 400, 500], 3));
+
+const tx = [
+    {date: "2025-11-01", type: "income", amount: 1000},
+    {date: "2025-11-02", type: "expense", amount: 200},
+    {date: "2025-11-03", type: "income", amount: 500},
+];
+console.log("CSV:\n", transactionsToCSV(tx));
+console.log("Summary:", summarizeTransactions(tx));
+console.log("Top Income:", topTransactions(tx, 1, "income"));
+console.log("Anomalies (>600):", detectAnomalies(tx, 600));
+console.log("Percentage Change:", percentageChange(1000, 1200));
+console.log("Future Value:", round2(futureValueCAGR(1000, 0.05, 3)));
+console.log("Portfolio Value:", portfolioValue([{name:"AAPL", quantity:10, price:150}, {name:"TSLA", quantity:5, price:200}]));
