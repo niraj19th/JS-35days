@@ -1,0 +1,94 @@
+<!-- Array methods- Add to end -->
+
+let fruits = ["apple", "banana"];
+fruits.push("orange");
+console.log(fruits);  // apple banana orange
+
+<!-- can add multiple at once -->
+
+fruits.push("Mango", "grape"); // ["apple", "banana", "orange", "mango", "grape"]
+
+<!-- Push () RETURNS the new length  -->
+
+let newlength = fruitspush("kiwi");
+console.log(newlength); //6
+
+<!-- push() → adds at end
+pop()  → removes from end
+unshift() → adds at start
+shift()   → removes from start -->
+
+
+
+<!-- 2- pop()- REMOVE FROM THE END -->
+
+let fruits= ["apple", "mango", "kiwi", "avocado"];
+let removed = fruits.pop();
+
+console.log(removed);    //  "avocado" - this the removed item
+console.log(fruits);      // ["apple", "mango", "kiwi"]
+
+<!-- Pop from the empty array -->                                               
+
+<!-- let empty= [];
+let result = empty.pop();
+console.log(result)   // undefined  
+
+ Real-Life Example 1: Browser Back Button
+
+The browser stores your history in a stack (LIFO).
+
+When you press BACK:
+
+let page = historyStack.pop();
+
+
+But what if there is no more history?
+page will be undefined, so the browser knows:
+
+➡️ “No more pages to go back to.” -->
+
+
+// We pop an empty array because:
+
+👉 In real programs, we don’t always know whether the array has data.
+👉 pop() returning undefined tells the program that the array was empty.
+👉 It helps avoid errors and gives useful information.
+
+
+<!-- 3-unshift------- Add items at the first/ start -->
+
+let fruits = ["kiwi", "pineapple"];
+fruits.unshift("Apple");
+console.log(fruits);   // ["apple", "kiwi", "pineapple"]
+
+<!--  multiple times  -->
+
+fruits.unshift("Mango", "papaya");
+console.log(fruits);  // mango papaya apple kiwi pineapple
+
+
+
+<!-- 4- shift() -- Remove from start/1st -->
+
+let fruits= ["apple", "mango", "pineapple"];
+let removed = fruits.shift();
+
+console.log(removed);   // apple
+console.log(fruits);   // mango, pineapple
+
+
+<!-- 5- splice()------ Add/ remove at any position  -->
+
+let fruits= ["apple", "mango", "pineapple", "pomegranate"];
+
+
+<!-- // remove 1 item at index 2 -->
+
+fruits.slice(2,1);
+console.log(fruits);  // apple, mango, pomegranate
+
+<!-- add item at index 1 -->
+
+fruits.splice(1,0, "grape");
+console.log(fruits);     // apple grape mango pomegranate
