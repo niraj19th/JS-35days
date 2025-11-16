@@ -48,5 +48,47 @@ let fruits = [ "apple", "mango", "orange"];
 console.log(fruits[0]); // apple
 
 
-<!-- last idem  -->
-// last
+<!-- last item  -->
+// last item = -1
+
+console.log(fruis[3]);    // mango
+console,log(fruits[fruits.length -1]); /// mango// works for any length
+
+<!-- 
+//negative indices dont works in JS -->
+
+console.log(fruits[-1]);   // undefined (not like python)
+
+
+<!-- IMP - REMEMBER ARRAY ALWAYS STARTS WITH #0 -->
+
+
+
+<!-- modifying arrays -->
+
+let nums = [10, 15, 20];
+
+// change existing item:
+
+nums[1] = 25;
+
+console.log(nums); //    [10,25,20]
+
+<!-- add new items at specific number -->
+ 
+nums[4] = 50;
+console.log(nums);    // [10,25,20,50]
+
+<!-- Danger - creating gaps -->// these empty slots are called holes
+
+nums[10] = 100;
+console.log(nums); // [10,25.20,50, empty *6, 100]
+
+<!-- dont do this use push instead 
+ example  nums.push(100) // // [10,25,20,50,100]
+ 💡 RULE OF THUMB
+
+nums[10] = 100 → creates holes.
+
+nums.push(100) → safe, no holes.-->   
+
