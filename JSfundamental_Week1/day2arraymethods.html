@@ -85,10 +85,95 @@ let fruits= ["apple", "mango", "pineapple", "pomegranate"];
 
 <!-- // remove 1 item at index 2 -->
 
-fruits.slice(2,1);
+fruits.splice(2,1);
 console.log(fruits);  // apple, mango, pomegranate
 
 <!-- add item at index 1 -->
 
 fruits.splice(1,0, "grape");
 console.log(fruits);     // apple grape mango pomegranate
+
+<!-- Replace item at index 2: -->
+ fruits.splice(2,1, "kiwi");
+ console.log(fruits);    // apple grape kiwi pomegranate
+
+<!-- syntax- array.splice(startIndex, deleteCount, item1, item2,..............) -->
+
+
+
+<!-- Splice- Get portion of array (doesnot modify original) -->
+
+let country = ["Nepal", "india", "china", "spain", "hungary"];
+
+<!get items from index 1 to 3 (3 not included) -->
+
+let sliced = country.slice(1,3);
+console.log(sliced);  // india, china
+console.log(country)   // ["Nepal", "india", "china", "spain", "hungary"] // no change
+
+
+<!-- get from index 2 to the end -->
+
+let fromTwo = fruits.slice(2);
+console.log(fromTwo);    // china, spain, hungary
+
+<!-- copy entire array -->
+
+let copy = country.slice();
+console.log(copy);               // ["Nepal", "india", "china", "spain", "hungary"]
+
+
+
+
+<!-- concat()- combine arrays -->
+
+let fruits = ["apple", "banana"];
+let veggies = ["carrot", "potato"]'
+
+let food = veggies.concat(fruits); 
+console.log(food);   // carrot, potato, apple, banana
+
+
+<!-- original array unchanged -->
+ console.log(fruits);  // apple, banana
+ console.log(veggies);  // carrot, potato
+
+ 
+ <!-- combine multiple  -->
+
+ let more = ["rice", "bread"];
+ let all= fruits.concat(veggies, more);
+ console.log(all);   // apple, banana, carrot, potato, rice, bread;
+
+
+ <!-- indexOf()-- Find position of the item -->
+
+
+ let fruits = ["apple", "banana", "grapes"];
+
+ let pos = fruits.indexOf("banana");
+ console.log(pos);    // 1 (first occurrence)
+
+ let notFound = fruits.indexOf("avocado");
+ console.log(notFound);    // -1 -> not in the array
+
+ <!-- check if the item exists -->
+
+ if (fruitsindexOf("apple")!== -1 ){
+    console.log("apple found!";)
+ }
+
+
+ <!-- includes()-- check if items exists(easier than indexof) -->
+
+ let fruits = [ "banana", "guava", "orange"];
+
+ console.log(fruits.includes("banana"));  // true
+ console.log(fruits.includes("kiwi"));    // false
+
+<!-- use in conditonals -->
+
+if (fruits.includes("apple")){
+    console.log("we have apple!");
+}
+
