@@ -177,3 +177,94 @@ if (fruits.includes("apple")){
     console.log("we have apple!");
 }
 
+<!-- reverse()-- Reverse Array (modifies original) -->
+
+let numbers = [1,2,3,4,5];
+numbers.reverse();
+console.log(numbers);      // 5, 4, 3, 2 ,1
+
+
+<!-- sort()-- Sort array (modifies original) -->
+
+// sort strings
+
+let fruits= ["apple", "papaya", "kiwi", "orange"];
+fruits.sort
+console.log(fruits);   // apple, kiwi, oranage, papaya
+
+
+// sort numbers (TRICKY)//
+
+    let num=[1,5,2,10,15,7];
+    num.sort();
+    console.log(num);   // 1,2,7,10,15,5 ---- wrong
+
+    <!-- Correct way to sort numbers -->
+
+    nums.sort((a,b) => a - b);
+    console.log(num);   // 1,2,5,7,10,15
+
+
+
+<!--  join()- Convert array to string  -->
+
+let fruits= ["apple", "orange", "kiwi"];
+
+let str1 = fruits.join();
+console.log(str1);  // "apple, orange, kiwi"
+
+let str2= fruits.join(" - ");
+console.log(str2); // "apple - banana - kiwi"
+
+let str3= fruits.join("");
+console.log(str3); // "applebananakiwi"
+
+
+<!-- Array Length Property -->
+
+let country = ["Nepal", "Bhutan", "Japan"];
+
+console.log(country.length); // 3//  .length tag is used here ----->
+
+
+// change length - rarely used //
+
+country.length = 2;
+console.log(country);   //"Nepal", "Bhutan" // 2 only // last item removed ---->
+
+
+fruits.length = 5;
+console.log(country);    // ["Nepal", "Bhutan", empty*3]
+
+
+<!-- Multi dimension array -->
+
+<!-- Arrays of arrays: -->
+
+let matrix = [
+
+[ 1, 2, 3],
+[ 4, 5, 5],
+[ 7, 8, 9],
+
+];
+
+console.log(matrix[0]);  // [ 1, 2, 3]
+console.log(matrix[0][0]);  // [1]
+console.log(matrix[1][2]);  // [5]
+console.log(matrix[2][1]);  // [8]
+
+
+<!-- Real examples - student grades -->
+
+let student = [
+
+["John", 85, 90, 88],
+["Motu", 85, 90, 88],
+["Patlu", 85, 90, 88],
+
+];
+
+console.log(student[0][0]);   // John
+console.log(student[0][1]); // 85 -> John"s first grade
+console.log(student[1][3]);  // 95 -> Sarah's third grade

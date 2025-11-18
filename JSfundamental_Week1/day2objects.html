@@ -1,0 +1,72 @@
+<!-- Objects- Complete deep drive -->
+
+<!-- objects -> Objects store data as key-value pairs(property names and values) -->
+
+<!-Arrays- Ordered list :(access by index) -->
+
+let personArray = ["John", 25, "Paris"];
+console.log(personArray); -----> "John"- what does index 0 mean?
+
+<!-- Object : named properties (access by name  ) -->
+
+let personObject = {
+    name : John,
+    age : 25;
+    city: "Paris"
+};
+
+console.log(personObject.name);   // "John"-   Clear meaning !
+
+<!-- 
+ KEY INSIGHT: Use arrays for lists of similar items. Use objects when each piece of data has a specific meaning. -->
+
+ <!-- creating objects -->
+
+ // method- 1 : Object literal ( most common)
+
+ let person = {
+
+    name : "Niraj";
+    age : 20;
+    city : "Kathmandu"
+ }
+
+ <!-- method - 2 : Empty Object -->
+  let empty = {}; 
+
+
+  <!-- method- 3 : Object Constructor ( rarely used) -->
+   let obj = new Object();
+   obj.name = "Niraj";
+
+
+   <!-- Object Properties - All data types -->
+
+   let person = {
+
+    // string
+    name : "Niraj", 
+
+   // number:
+   age : 20,
+
+   // boolean;
+   isStudent = true,
+
+   //Array:
+   hoobies = ["reading", "gaming", "hiking , "coding"],
+
+   <!-- OBJECT (NESTED) -->
+
+address : {
+    street : "123 Main st",
+    city : "KTM"
+    country : "Nepal"
+}
+
+<!-- function -->
+
+greet: function(){
+    return "Hello, Iam " + this.name ;
+}
+    };
