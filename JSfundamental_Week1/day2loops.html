@@ -93,4 +93,18 @@ while (count <=5 ){
 
 
 
-   <!-- COMBINING EVERYTHING -->
+   <!-- COMBINING EVERYTHING- REAL EXAMPLES -->
+
+   <!-- Example 1- array of objects -->
+
+   let students = [
+   {name : "John", age: 20, grade : "A"}
+      {name : "Ram", age: 25, grade : "B"}
+         {name : "Hari", age: 29, grade : "A"}
+   ]
+
+   <!-- loop through and print each student: -->
+
+   for ( let student of students){
+    console.log(`${student.name}     is ${student.age} years old, grade: ${student.grade}`)
+   }
