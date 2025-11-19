@@ -1,0 +1,96 @@
+<!-- Loop repeats code multiple times automatically -->
+
+For loop : 
+
+<!-- PRINT FROM 0 TO 5 -->
+
+for (let i=1; i <= 5; i++){
+    console.log(i);
+}
+// output -->1, 2, 3, 4, 5
+
+<!-- breaking it down -->
+
+for (start ; condition; step){
+    // code to repeat
+}
+
+for(let i = 1; i <=5 ; i++){
+    Start   while      add 1
+    at      i<=5        each time
+    1
+}
+
+<!-- Loop through array -->
+ 
+let fruits = ["apple", "banana", "kiwi"];
+
+for (let i = 0; i<=fruits.length; i++){
+    console.log(fruits[i]);
+}
+
+<!-- output- apple, banana, kiwi -->
+ <!-- How it works:
+
+Start: i = 0 (first index)
+Condition: i < fruits.length (while i is less than 3)
+Step: i++ (increase i by 1)
+Loop runs 3 times (i = 0, 1, 2) -->
+
+
+<!-- While loop -->
+
+let count = 1;
+
+while (count <=5 ){
+    console.log(count);
+    count++;    
+}
+<!-- output - 1,2,3,4,5 -->
+
+<!-- when to use
+ for loop : when we know how many times to repeat
+ - while loop : when we dontknow how many times to repeat -->
+
+  
+
+ <!-- For ... of loop [easy way for arrays] -->
+
+ let fruits = ["apple", "banana", "orange"];
+
+ for (let fruit of fruits){
+
+    console.log(fruits);
+ }
+
+ <!-- this is the easiest way to loop through arrays - -->
+
+ <!-- PRACTICE - 3 : LOOPS -->
+
+  --> PRACTICE 1 :  print number 1 to 10
+
+  for(int i =1; i<=10; i++){
+    console.log(i);
+  }
+
+  <!-- practice 2: loop through array -->
+
+  let colors = ["red", "blue", "yellow"];
+  for ( let color of colors ){
+    console.log(color);
+  }
+
+  <!-- Practice3: sum all numbers in array -->
+
+  let nums = [5, 20, 30, 40];
+   let sum = 0;
+
+   for ( let num of nums) {
+    sum = sum + num;
+   }
+
+   console.log("Total:", sum); // 95
+
+
+
+   <!-- COMBINING EVERYTHING -->

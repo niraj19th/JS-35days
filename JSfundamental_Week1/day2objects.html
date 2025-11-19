@@ -80,4 +80,73 @@ greet: function(){
     };
 
     <!-- method- 1 : Dot notation (preferred) -->
-     console.log(person.name)
+     console.log(person.name); // Niraj
+     console.log(person.age);  // 20 
+
+     <!-- method-2 : Bracket Notation -->
+
+     console.log(person["name"]);  // Niraj
+     console.log(person["age"]);   // 20
+
+
+<!-- Changing the object properties -->
+
+let person = {
+
+    name : "Niraj",
+    age : 20
+}
+
+<!-- change a property  -->
+
+person.age = 26;
+console.log(person.age)  // 26
+
+<!-- Add new property  -->
+
+person.city = "KTM";
+console.log(person.city);
+
+//{ name- niraj, age- 26, city- ktm} -->
+
+
+
+<!-- objects with methods (functions) -->
+
+    let person = {
+        name : "Niraj"
+        age : 20;
+        greet: function(){
+            return "Hello, Iam " + this.name;     // this means the object, we will learn more about this later
+        }
+    };
+
+    console.log(person.greet()); // Hello Iam Niraj.
+
+
+    <!-- >Practice 2 : objects -->
+
+    <!-- create object about yourself -->
+
+    let me = { 
+
+        name : "Alice",
+        age : 18,
+        address : "Jhapa",
+        hobby : "gaming",
+        country : "Bhutan"
+
+    }
+    
+    console.log( "name:", me.name);
+    console.log( "age:", me.age);
+    console.log("hobby:", me.hobby);
+
+    <!-- change age  -->
+     me.age = 25;
+     console.log("New age", me.age);
+
+     <!-- add new property -->
+
+     me.favoritefood = "pizza";
+     console.log("Full object", me);   // prints all from name to till the end, fav food
