@@ -1,0 +1,32 @@
+<!-- stack in js -->
+Stack - primitive ->
+Stores primitive value like - int, const, bigint, boolean, undefined
+- access is fast, size is small follows lifo 
+-automatically  cleaned  when function execution executed
+
+for Example:
+let a  = 50;
+b = a;  // copy value
+b = 20;
+
+console.log(a); // 50
+console.log(b); // 20 
+
+ --> a stores  10 in stack
+ --> b gets copy of a -> changing  b doesnot affect a
+--> interview <qsn->  do primitive value gets copied or reference -> copied</qsn->
+
+
+<!--  Heap -->
+  - stores objects, array, function
+  - access is slower , size is larger , dynamic allocation
+  - lives until garbage collection removes unreachable objects 
+
+  for example:
+
+  let obj1 = { name: "NIRAJ"};
+  let obj2 = obj1; // copy reference
+  obj2.name = "Ram";
+    
+  console.log(obj1);
+  console.log(obj2);
