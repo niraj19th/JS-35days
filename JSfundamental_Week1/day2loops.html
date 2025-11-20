@@ -106,5 +106,37 @@ while (count <=5 ){
    <!-- loop through and print each student: -->
 
    for ( let student of students){
-    console.log(`${student.name}     is ${student.age} years old, grade: ${student.grade}`)
+console.log ( `${ student.name} is `${student.age} years old, grade:`{student.grade}`);
    }
+
+   <!-- Example 2 : Find highest score -->
+
+   let scores = [ 87, 11, 22, 44, 100];
+
+   let highest = [0]; // start with 0
+
+   for (let score of scores){
+    if (score > highest){
+        highest = score; 
+    }
+   }
+
+   console.log("highest score.", highest); // 100
+
+
+   <!--  Example - 3  Count even number -->
+
+   let nums = [2,5,10,16,19,11];
+   
+   let evenCount = 0;
+
+   for ( let num of nums){
+    if ( num % 2 == 0){
+        evenCount++
+    }
+   }
+   
+   console.log(" even numbers", evencount)   // 3
+
+
+   
