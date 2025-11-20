@@ -52,3 +52,91 @@ let total = 0;
  let arrfil= numbs.filter[ numbs => numbs > 10];
 
 console.log(arrfil);
+
+
+<!--  these are copy paste -->
+  let students = [];
+
+// Function 1: Add a student
+function addStudent(name, age, grades) {
+    // Create student object with name, age, grades (array)
+    // Add to students array
+    // YOUR CODE HERE
+}
+
+// Function 2: Calculate average grade
+function getAverage(studentName) {
+    // Find student by name
+    // Calculate average of their grades
+    // Return the average (rounded to 2 decimals)
+    // YOUR CODE HERE
+}
+
+// Function 3: Get top student
+function getTopStudent() {
+    // Find student with highest average
+    // Return student object
+    // YOUR CODE HERE
+}
+
+// Function 4: List all students
+function listAllStudents() {
+    // Loop through all students
+    // Print: "Name: [name], Average: [avg]"
+    // YOUR CODE HERE
+}
+
+// Function 5: Get students by grade
+function getStudentsByGrade(minGrade) {
+    // Return array of students with average >= minGrade
+    // YOUR CODE HERE
+}
+
+// TEST YOUR FUNCTIONS:
+addStudent("John", 20, [85, 90, 88]);
+addStudent("Sarah", 22, [92, 95, 89]);
+addStudent("Mike", 21, [78, 82, 80]);
+addStudent("Emma", 19, [95, 98, 96]);
+
+console.log("\n=== All Students ===");
+listAllStudents();
+
+console.log("\n=== John's Average ===");
+console.log(getAverage("John"));
+
+console.log("\n=== Top Student ===");
+console.log(getTopStudent());
+
+console.log("\n=== Students with 90+ Average ===");
+console.log(getStudentsByGrade(90));
+
+
+
+<!--  this too -->
+<!-- debugging challenge -->
+let products = [
+    {name: "Laptop", price: 1000},
+    {name: "Mouse", price: 25},
+    {name: "Keyboard", price: 75}
+];
+
+function getTotalPrice(products) {
+    let total = 0;
+    for (let i = 0; i <= products.length; i++) {
+        total += products[i].price;
+    }
+    return total;
+}
+
+function findCheapest(products) {
+    let cheapest = products[0];
+    for (let product in products) {
+        if (product.price < cheapest.price) {
+            cheapest = product;
+        }
+    }
+    return cheapest;
+}
+
+console.log("Total:", getTotalPrice(products));
+console.log("Cheapest:", findCheapest(products));
