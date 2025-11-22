@@ -107,3 +107,19 @@ console.log(fruits); // "apple", "banana", "kiwi", "orange", "papaya"
 
 
 // note:// A comes before a, Z comes before a 
+
+const num= ["1,4,90,11,45,12"];
+
+num.sort((a,b)=> b - a);// sorts ascending to descending - 1 4 11 12
+
+num.sort((a, b) => b - a) ; // sorts descendig to ascending- 90 45 12
+
+
+// make nested array
+
+const arr= [ 1,3,4,[40,90,[70,80],11]];
+
+arr.flat()
+arr.flat(Infinity);
+console.log(arr);
+
