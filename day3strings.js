@@ -25,3 +25,37 @@ const a = str.toUpperCase();
 const b = str.toLowerCase();
 
 console.log(a,b);
+
+
+const msg = ` hello iam writing the msg called hello `
+
+console.log(msg.lastIndexOf(hell));  // counts the 1st one
+console.log(msg.lastIndexOf(hell)); // counts the last one
+
+console.log(msg.includes(hello)); // if it is present than true otherwise false
+
+// slice
+
+console.log(msg.slice(2,7)); // starting from 2 to 6 will display, however 7th index is written but it will take upto 6th only
+
+
+//  if one needs to join two string than we can concadinate
+
+const a = "Niraj";
+const b = "Kandel";
+const c = a + "" + b ;  // prints Niraj Kandel
+
+//  making changes or replacing in string
+
+let arr = "Iam typing hello to show hello in screen";
+
+console.log(arr.replace(Iam, Hy)); // iam changes into hy
+console.log( arr.replaceAll(Hello, NewWord)); // both hello will be changed into `NewWord`;
+
+// trim
+ 
+const abc = " ARUN "
+console.log(abc.trim());   // this will remove spaces additionally we can remove space infront or back too using trim.end and trim.
+
+
+// if we want to 
