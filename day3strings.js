@@ -58,4 +58,10 @@ const abc = " ARUN "
 console.log(abc.trim());   // this will remove spaces additionally we can remove space infront or back too using trim.end and trim.
 
 
-// if we want to 
+// if we want to remove something and make it array than us .split
+
+const caste = "Bahun, Limbu, Rai, Shah";
+
+console.log(caste.split(","));
+
+
