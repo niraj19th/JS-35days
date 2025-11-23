@@ -39,3 +39,4 @@ console.log(Object.entries()); // both keys and values will be displayed,  but i
 // tutorial no #8 , #9 and #10 should be completed tomorrow, at anycost.\
 
 // will be completed js course probably within this week or next week tuesday
+// close for today .. 11/23/20235, 9-25pm
