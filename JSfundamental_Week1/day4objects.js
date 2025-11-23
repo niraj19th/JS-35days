@@ -34,3 +34,4 @@ console.log(Object.values());  // concept above mentioned
 console.log(Object.entries()); // both keys and values will be displayed,  but i guess it will be shown in array
 
 
+// tutorial no #8 , #9 and #10 should be completed tomorrow, at anycost.
