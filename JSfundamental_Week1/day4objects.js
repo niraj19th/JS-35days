@@ -36,4 +36,6 @@ console.log(Object.entries()); // both keys and values will be displayed,  but i
 // Updated on Nov 23, 2024 - taking a break today!
 
 
-// tutorial no #8 , #9 and #10 should be completed tomorrow, at anycost.
+// tutorial no #8 , #9 and #10 should be completed tomorrow, at anycost.\
+
+// will be completed js course probably within this week or next week tuesday
