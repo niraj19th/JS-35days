@@ -33,4 +33,6 @@ console.log(Object.values());  // concept above mentioned
 
 console.log(Object.entries()); // both keys and values will be displayed,  but i guess it will be shown in array
 
+// Updated on Nov 23, 2024 - taking a break today!
+
 
