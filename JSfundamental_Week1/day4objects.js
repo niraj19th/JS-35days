@@ -49,4 +49,4 @@ for ( let num in user){
     console.log(keys, user[keys]);  // keys are name,age // user keys are the value inside like name, age
 }
 
-// tmrw
+// tmrw to doo
