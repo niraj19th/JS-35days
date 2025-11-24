@@ -25,7 +25,7 @@ console.log(user);
 delete user.age;  // age deleted from the object
 console.log(user); 
 
-// To access/ display keys only
+// To access/ display keys only --> Important
 
 console.log(Object.keys(user)); // for example age = 30, age is key and 30 is values  
 
@@ -40,3 +40,13 @@ console.log(Object.entries()); // both keys and values will be displayed,  but i
 
 // will be completed js course probably within this week or next week tuesday
 // close for today .. 11/23/20235, 9-25pm
+
+// 11/24/2025 -> 9-00pm
+
+// loop
+
+for ( let num in user){
+    console.log(keys, user[keys]);  // keys are name,age // user keys are the value inside like name, age
+}
+
+
