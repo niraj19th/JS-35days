@@ -43,10 +43,30 @@ console.log(Object.entries()); // both keys and values will be displayed,  but i
 
 // 11/24/2025 -> 9-00pm
 
-// loop
+// loop - imp
 
 for ( let num in user){
     console.log(keys, user[keys]);  // keys are name,age // user keys are the value inside like name, age
 }
+//  this is how it works - user.keys user["name"] user["age"]
 
-// tmrw to doo
+
+const name= user.name
+ const age = user.age
+
+
+//  object destructuring instead of upper one
+
+ const {name, age, amount} = user;
+
+ console.log(name, age, amount);
+
+//  array destructuring 
+const {name, age} = user;
+
+const arr = [10,20,40,90,11];
+
+const[first, second] = arr;
+
+console.log(name,age);
+console.log(first, second);
