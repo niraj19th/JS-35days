@@ -62,7 +62,7 @@ const name= user.name
  console.log(name, age, amount);
 
 //  array destructuring 
-const {name, age} = user;
+const {name, age} = user;   // can add detail by doing name:xyz , age: xyz */
 
 const arr = [10,20,40,90,11];
 
