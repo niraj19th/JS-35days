@@ -186,3 +186,56 @@ const user = {
 user.greeting();   // greeting is the function here. we can return also
 const va = user.greeting();
 console,log(va);    
+
+// let const and var
+
+const user = {
+
+    name : "Niraj";
+        age : 20;
+        emailId: "niraj@gmail.com"
+        city : "Ktm"
+        education: {
+            faculty : "Humanities",
+            course : "BCA"
+        }
+}
+
+console.log(user.city); // access the city
+
+
+const user2 = {...user}// makes independent , BUT NOT IFFECTIVE FOR INSIDE ANOTHER
+user2.name = "Mohan";
+
+
+// DEEP COPY
+
+// Create an object representing a smartphone with:
+// - brand (string)
+// - model (string)
+// - price (number)
+// - features (array with at least 3 features)
+// - isAvailable (boolean)
+
+// Then:
+// 1. Add a new property 'color' with value 'black'
+// 2. Update the price to 799
+// 3. Add one more feature to the features array
+// 4. Log the entire object
+
+// YOUR CODE HERE:
+
+
+const smartphone = {
+    brand : "Samsung",
+    model : "Galaxy",
+    price : 23356,
+    features : "Fast processing", "Good Battery Life", "Light weight",
+    isAvailable : true,
+}
+
+smartphone.color : white,
+smartphone.price : 444444,
+smartphone.feature : "Good camera"
+
+console.log(smartphone)
