@@ -92,3 +92,78 @@ console.log(val);
 
 
 // pure vs impure function
+
+
+
+// practice
+// dif betweenfunction declaration and expression?
+
+abcd();  ---- hositing
+function abcd(){             -- fucnction creation
+
+} 
+//  no error if we do hositing in function declaration
+
+// function expression
+
+abcd();   -- hosting will not occur, error will be seen----> cannot access beofre intiazation
+
+let abcd = function () {
+
+}
+
+//  making function simple
+
+greet();  ===> this is being hosited meaning called before intiazation
+
+function greet(){
+    console.log("Hello");
+}
+
+//  convert function to arrow function
+
+function multiply(a,b){
+   return a * b 
+};
+
+// converting
+
+let multiply = (a,b) => {
+   return a * b 
+};
+
+
+// how many parameters and arguement
+
+function demo(a, b, c){}
+
+demo(1,2)    
+
+//  demo- a b c is  paramater and 1 adn 2 is arguement after that a will be 1 and b will be 2 where c will remaun undefined
+//  there are 2 arguement
+
+
+// making function
+
+function sayHi(name - "Guest") {
+    console.log("HI",  name)
+}
+sayHi()    // no arguement passed so will be displayed HI Guest....
+
+
+//  what does ... operator mean in paramter?
+
+function add(...val){      // all value will be stored as array in ...val beacuse it is rest operator 
+
+}
+add(1,2,3,4,5)
+
+
+// use rest parameter  to accept any number of scores and return the total
+
+
+function getScore(...score){
+    console.log(score);
+}
+
+getScore(10,12,13);
